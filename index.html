@@ -7,11 +7,12 @@
 
   <script>
     let upto = 0;
+    let increase = 10;
     let counts = setInterval(updated, 10);
 
     function updated() {
         let count = document.getElementById("counter");
-        count.innerHTML = ++upto;
+        count.innerHTML = upto += increase;
         if (upto === 1000) {
             clearInterval(counts);
         }
