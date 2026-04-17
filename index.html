@@ -17,7 +17,7 @@
             font-size: 3rem;
             font-weight: bold;
             color: #4CAF50;
-            margin-top: 20px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -30,11 +30,11 @@
     let increase = 1;
     let counts = setInterval(updated, 1);
 
-    function updated() {
-        let count = document.getElementById("counter");
-        count.innerHTML = upto += increase;
-        if (upto === 36) {
-            clearInterval(counts);
+        function updated() {
+            let count = document.getElementById("counter");
+            count.innerHTML = ++upto;
+            if (upto === 1000) {
+                clearInterval(counts);
         }
     }
   </script>
