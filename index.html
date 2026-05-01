@@ -27,14 +27,14 @@
 
   <script>
     let upto = 36;
-    let increase = 1;
-    let counts = setInterval(updated, 1);
+    let counts = setInterval(updated, 10);
 
         function updated() {
             let count = document.getElementById("counter");
             count.innerHTML = ++upto;
-            if (upto === 36) {
+            if (count.innerHTML >== upto) {
                 clearInterval(counts);
+                count.innerHTML = upto;
         }
     }
   </script>
